@@ -45,18 +45,10 @@ body {
 
 .brand-header {
   display: flex;
-  align-items: center;       /* Alinha imagem e texto pelo centro */
-  justify-content: center;   /* Centraliza o conjunto no topo */
-  gap: 0.6rem;               /* Espaçamento proporcional entre logo e texto */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.brand-logo {
-  height: 1.8rem;            /* Mesma altura da fonte do h1 (1.8rem) */
-  width: auto;               /* Mantém a proporção correta da imagem sem distorcer */
-  border-radius: 6px;        /* Ajuste fino do arredondamento para o novo tamanho */
-  object-fit: contain;
-  display: block;
 }
 
 .brand-header h1 {
@@ -64,8 +56,16 @@ body {
   font-weight: 800;
   letter-spacing: -0.5px;
   color: var(--text-primary);
-  line-height: 1;            /* Mantém a caixa de texto sem sobras no topo/base */
+  line-height: 1;
   margin: 0;
+}
+
+.brand-logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 4px;
+  object-fit: cover;
+  display: block;
 }
 
 .bio {
@@ -106,7 +106,6 @@ body {
   color: var(--neon-yellow);
 }
 
-/* Destaque para link especial */
 .link-card.highlight {
   border-color: rgba(204, 255, 0, 0.4);
 }

@@ -1,4 +1,3 @@
-// Efeito sutil de feedback visual ao clicar nos cards
 document.querySelectorAll('.link-card').forEach(card => {
   card.addEventListener('click', function() {
     this.style.transform = 'scale(0.98)';
