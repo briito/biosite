@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+v<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,66 +10,42 @@
 </head>
 <body>
 
-  <div class="container">
-    <!-- Botão Mudar Tema -->
-    <button id="themeToggle" class="theme-btn" aria-label="Alternar tema">
-      <i class="ph ph-sun"></i>
-    </button>
-
-    <!-- Perfil -->
+  <div class="bio-wrapper">
+    <!-- Cabeçalho / Perfil -->
     <header class="profile">
-      <div class="avatar-container">
-        <img src="https://via.placeholder.com/120" alt="Radar F5 Logo" class="avatar">
+      <div class="brand-header">
+        <img src="rf5_logo.webp" alt="Logo Radar F5" class="brand-logo">
+        <h1>Radar F5</h1>
       </div>
-      <h1>Radar F5</h1>
       <p class="bio">Tecnologia, Inovação e Tendências do Mundo Tech 🚀</p>
     </header>
 
-    <!-- Busca de Links -->
-    <div class="search-box">
-      <i class="ph ph-magnifying-glass"></i>
-      <input type="text" id="searchInput" placeholder="Buscar link...">
-    </div>
-
     <!-- Lista de Links -->
-    <main class="links-container" id="linksContainer">
-      <a href="https://radarf5.com.br" target="_blank" class="link-card" data-title="blog tecnologia radar f5">
+    <main class="links-container">
+      <a href="https://radarf5.com.br" target="_blank" class="link-card">
         <i class="ph ph-globe"></i>
         <span>Nosso Blog Oficial</span>
         <i class="ph ph-arrow-up-right"></i>
       </a>
 
-      <a href="#" target="_blank" class="link-card" data-title="ofertas promocoes descontos">
+      <a href="#" target="_blank" class="link-card highlight">
         <i class="ph ph-shopping-bag"></i>
         <span>Hub de Ofertas & Descontos</span>
         <i class="ph ph-arrow-up-right"></i>
       </a>
 
-      <a href="#" target="_blank" class="link-card" data-title="youtube videos tutoriais">
+      <a href="#" target="_blank" class="link-card">
         <i class="ph ph-youtube-logo"></i>
         <span>Canal no YouTube</span>
         <i class="ph ph-arrow-up-right"></i>
       </a>
 
-      <a href="#" target="_blank" class="link-card" data-title="instagram redes sociais">
+      <a href="#" target="_blank" class="link-card">
         <i class="ph ph-instagram-logo"></i>
         <span>Siga no Instagram</span>
         <i class="ph ph-arrow-up-right"></i>
       </a>
     </main>
-
-    <!-- Modal do QR Code -->
-    <button id="qrBtn" class="qr-trigger-btn">
-      <i class="ph ph-qr-code"></i> Compartilhar via QR Code
-    </button>
-
-    <div id="qrModal" class="modal">
-      <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h3>Escaneie para acessar</h3>
-        <div id="qrcode"></div>
-      </div>
-    </div>
 
     <!-- Rodapé -->
     <footer>
@@ -77,8 +53,6 @@
     </footer>
   </div>
 
-  <!-- Lib do QR Code -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
