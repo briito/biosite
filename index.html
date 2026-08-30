@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radar F5 | Links Oficiais</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Ícones Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
-    <h1>Ben vindo ao Bio Site</h1>
-    
+  <div class="container">
+    <!-- Botão Mudar Tema -->
+    <button id="themeToggle" class="theme-btn" aria-label="Alternar tema">
+      <i class="ph ph-sun"></i>
+    </button>
+
+    <!-- Perfil -->
+    <header class="profile">
+      <div class="avatar-container">
+        <img src="https://via.placeholder.com/120" alt="Radar F5 Logo" class="avatar">
+      </div>
+      <h1>Radar F5</h1>
+      <p class="bio">Tecnologia, Inovação e Tendências do Mundo Tech 🚀</p>
+    </header>
+
+    <!-- Busca de Links -->
+    <div class="search-box">
+      <i class="ph ph-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Buscar link...">
+    </div>
+
+    <!-- Lista de Links -->
+    <main class="links-container" id="linksContainer">
+      <a href="https://radarf5.com.br" target="_blank" class="link-card" data-title="blog tecnologia radar f5">
+        <i class="ph ph-globe"></i>
+        <span>Nosso Blog Oficial</span>
+        <i class="ph ph-arrow-up-right"></i>
+      </a>
+
+      <a href="#" target="_blank" class="link-card" data-title="ofertas promocoes descontos">
+        <i class="ph ph-shopping-bag"></i>
+        <span>Hub de Ofertas & Descontos</span>
+        <i class="ph ph-arrow-up-right"></i>
+      </a>
+
+      <a href="#" target="_blank" class="link-card" data-title="youtube videos tutoriais">
+        <i class="ph ph-youtube-logo"></i>
+        <span>Canal no YouTube</span>
+        <i class="ph ph-arrow-up-right"></i>
+      </a>
+
+      <a href="#" target="_blank" class="link-card" data-title="instagram redes sociais">
+        <i class="ph ph-instagram-logo"></i>
+        <span>Siga no Instagram</span>
+        <i class="ph ph-arrow-up-right"></i>
+      </a>
+    </main>
+
+    <!-- Modal do QR Code -->
+    <button id="qrBtn" class="qr-trigger-btn">
+      <i class="ph ph-qr-code"></i> Compartilhar via QR Code
+    </button>
+
+    <div id="qrModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>Escaneie para acessar</h3>
+        <div id="qrcode"></div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>© 2026 Radar F5. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- Lib do QR Code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
